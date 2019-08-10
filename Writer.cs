@@ -35,7 +35,7 @@ public abstract class Writer : IVlogger
         this.genre = genre;
     }
 
-    public void Write() 
+    public virtual void Write() 
     {
         this.Introduce();
         this.WritingAbout();
@@ -47,8 +47,5 @@ public abstract class Writer : IVlogger
     }
     protected abstract void WritingAbout();
 
-    void IVlogger.Vlog()
-    {
-        Console.WriteLine("I also have a vlog about my books.");
-    }
+    public abstract void Vlog();
 }

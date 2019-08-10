@@ -2,7 +2,7 @@ using System;
 public abstract class Promoter 
 {
     private string firstName, lastName;
-    private int cellphone;
+    protected int cellphone;
 
     public string fullName
     {
@@ -19,7 +19,7 @@ public abstract class Promoter
         this.cellphone = cellphone;
     }
 
-    public void Promote() 
+    public virtual void Promote() 
     {
         this.Introduce();
         this.Share();
@@ -37,4 +37,5 @@ public abstract class Promoter
     {
         Console.WriteLine("If you want to contact me, my cellphone number is " + this.cellphone + ".");
     }
+
 }

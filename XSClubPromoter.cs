@@ -16,12 +16,12 @@ public class XSClubPromoter : Promoter, IBodyBuilder, IVlogger
         Console.WriteLine("I am using Google AdWord paid ads.");
     }
 
-    void IBodyBuilder.Workout()
+    public void Workout()
     {
         Console.WriteLine("Oh, I am also working out, and you can look at me for free!");
     }
 
-    void IVlogger.Vlog()
+    public void Vlog()
     {
         Console.WriteLine("If you want to know, my hobby is vlogging - I can show you if you want.");
     }

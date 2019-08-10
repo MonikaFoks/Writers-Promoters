@@ -15,4 +15,9 @@ public class OmniaClubPromoter : Promoter
     {
         Console.WriteLine("I am using Facebook paid ads.");
     }
+
+    protected override void End()
+    {
+        Console.WriteLine("Feel free to contact me! My phone number is " + this.cellphone +".");
+    }
 }

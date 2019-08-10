@@ -5,6 +5,11 @@ public class BlogWriter : Writer
     {
     }
 
+    public override void Vlog()
+    {
+        Console.WriteLine("I have also a vlog connected with my blog.");
+    }
+
     protected override void WritingAbout()
     {
         Console.WriteLine("The name of my blog is " + this.Title + ". " +

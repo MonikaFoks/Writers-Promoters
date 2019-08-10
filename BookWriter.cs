@@ -5,6 +5,11 @@ public class BookWriter : Writer
     {
     }
 
+    public override void Vlog()
+    {
+        Console.WriteLine("I'm also vlogging about my writing.");
+    }
+
     protected override void WritingAbout()
     {
         Console.WriteLine("The title of my book is " + this.Title + "," +

@@ -1,6 +1,6 @@
 using System;
 
-public class XSClubPromoter : Promoter
+public class XSClubPromoter : Promoter, IBodyBuilder, IVlogger
 {
     public XSClubPromoter(string firstName, string lastName, int cellphone) : base(firstName, lastName, cellphone)
     {
@@ -15,4 +15,15 @@ public class XSClubPromoter : Promoter
     {
         Console.WriteLine("I am using Google AdWord paid ads.");
     }
+
+    void IBodyBuilder.Workout()
+    {
+        Console.WriteLine("Oh, I am also working out, and you can look at me for free!");
+    }
+
+    void IVlogger.Vlog()
+    {
+        Console.WriteLine("If you want to know, my hobby is vlogging - I can show you if you want.");
+    }
+    
 }

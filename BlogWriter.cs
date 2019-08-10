@@ -7,7 +7,7 @@ public class BlogWriter : Writer
 
     protected override void WritingAbout()
     {
-        Console.WriteLine("The name of my blog is " + this.Title + "." +
+        Console.WriteLine("The name of my blog is " + this.Title + ". " +
                           "I'm writing about " + this.Genre + ".");
     }
 }

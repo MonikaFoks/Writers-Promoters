@@ -1,6 +1,6 @@
 using System;
 
-public abstract class Writer
+public abstract class Writer : IVlogger
 {
     private string firstName, lastName, title, genre;
 
@@ -47,4 +47,8 @@ public abstract class Writer
     }
     protected abstract void WritingAbout();
 
+    void IVlogger.Vlog()
+    {
+        Console.WriteLine("I also have a vlog about my books.");
+    }
 }
